@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>Booking | KEERTHI's Cuisine</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./globalStyles.css">
+  <link rel="stylesheet" href="./components.css">
+  
+</head>
+
+<body>
+ 
+  <div class="nav">
+    <div class="container">
+      <div class="nav__wrapper">
+        <a href="./index.html" class="logo">
+          <img src="https://img.icons8.com/ios/2x/restaurant-building.png" alt="keerthi's cuisine">
+        </a>
+        <nav>          
+          <ol class="nav__list">
+            <div class="nav__list__wrapper">
+              <li><a class="nav__link" href="./ammu.html">Home</a></li>
+              <li><a class="nav__link" href="./menu.html">Menu</a></li>
+<li><a class="nav__link" href="./specials.html">Our specials</a></li>
+              <li><a class="nav__link" href="./about.html">About</a></li>
+              <li><a class="nav__link" href="./contact.html">Contact</a></li>
+              <li><a href="./booking.html" class="btn primary-btn">Place Order</a></li>
+            </div>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+  <section id="form" data-aos="fade-up">
+    <div class="container">
+      <h3 class="form__title">Place Order</h3>
+      <div class="form__wrapper">
+        <form name="booking" method="POST" netlify>
+          <div class="form__group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="First Name" required>
+          </div>
+          <div class="form__group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="Last Name" required>
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+          <div class="form__group">
+            <label for="tableType">Table Type</label>
+            <select name="Table Type" id="tableType" required>
+              <option selected disabled>Choose</option>
+              <option value="small">Small(2 persons)</option>
+              <option value="medium">Small(4 persons)</option>
+              <option value="large">large(6 persons)</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="guestNumber">Number of persons</label>
+            <input type="number" id="guestNumber" name="Guest Number" min="1" max="10" required>
+          </div>
+          <div class="form__group">
+            <label for="placement">Placement</label>
+            <select name="Placement" id="placement">
+              <option selected disabled>Choose</option>
+              <option value="outdoor">Outdoor</option>
+              <option value="indoor">Indoor</option>
+              <option value="rooftop">rooftop</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="Date" required>
+          </div>
+          <div class="form__group">
+            <label for="time">Time</label>
+            <input type="time" id="time" name="Time" required>
+          </div>
+		<div class="form__group">
+            <label for="order items">BOOK ITEMS</label>
+		<h1 class="form__group">
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>BUTTER CHICKEN</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>TANDOORI ROTI</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>TANDOORI CHICKEN</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>PILAF WITH EGGS</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>DUM ALOO</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>METHI PARATHA</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>POHA</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>SAMBAR IDLY</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>MOONG DAL CHEELA</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>ALOO PARATHA</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>KHEER</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>HALWA</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>RASMALLAI</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>BREAD SHAHI TUKDA</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>KULFI</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>VEG PULAV</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>RAJMA CHAWAL</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>BIRYANI WITH BUTTER CHICKEN</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>BUTTER NAAN WITH KAJU MASALA</li>
+		<input type="checkbox" id="checkbox" name="checkbox"> <li>NORTH INDIAN THALI</li>
+		</h1>
+          </div>
+          <div class="form__group form__group__full">
+		<a href="./ammu.html"<button type="submit" value="submit" class="btn primary-btn">Place Order</button></a></div>
+           </form>
+      </div>
+    </div>
+  </section>
+  
+  <script src="./main.js"></script>
+</body>
+
+</html>
